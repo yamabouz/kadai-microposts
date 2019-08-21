@@ -20,4 +20,4 @@
         </li>
     @endforeach
 </ul>
-{{ $microposts->render('pagination::bootstrap-4') }}
+{{ $microposts->links('pagination::bootstrap-4') }}
