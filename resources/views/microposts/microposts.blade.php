@@ -1,3 +1,4 @@
+
 <ul class="list-unstyled">
     @foreach ($microposts as $micropost)
         <li class="media mb-3">
@@ -9,6 +10,7 @@
                 <div>
                     <p class="mb-0">{!! nl2br(e($micropost->content)) !!}</p>
                 </div>
+                 @include('favorites.favorites_button', ['user' => $user])
             </div>
         </li>
     @endforeach
